@@ -11,7 +11,7 @@ const MyProvider = ({ children }) => {
   const pageEnd = useRef();
 
   const API_KEY = process.env.REACT_APP_API_KEY;
-  const URL = `https://api.spoonacular.com/recipes/complexSearch?query=${search}&apiKey=${API_KEY}&offset=${offset}&number=10}`;
+  const URL = `https://api.spoonacular.com/recipes/complexSearch?query=${search}&apiKey=${API_KEY}&offset=${offset}`;
   console.log(URL);
   //Fetch the data
   const { results, loading, error } = useFetch(URL);
